@@ -1,4 +1,4 @@
-#pacerunning追加のシミュレーション
+#途中から練習しなくなるシミュレーション
 import math
 import random
 from turtle import color
@@ -71,18 +71,10 @@ for i in range(1,day_length):
 for i in range(day_length):  
   fig[i]*=-1  
 
-
-'''
-print(au)
-print(distance)
-print(fit)
-print(fig)
-print(par)
-'''
 file_df=pd.DataFrame(zip(menu,au,distance,fit,fig,par),columns=['menu','au','distance','fitness','fatigue','performance'])
 figure=plt.figure()
 print(file_df)
-file_df.to_excel('./sim5.xlsx')
+file_df.to_excel('./sim6.xlsx')
 plt.plot(x,fit,color='red')
 plt.plot(x,fig,color='blue')
 plt.plot(x,par,color='yellow')
@@ -90,7 +82,7 @@ plt.xlim(1,day_length)
 plt.ylim(-800,800)
 #plt.show()
 
-figure.savefig("./sim5.png")
+figure.savefig("./sim6.png")
 
 
 

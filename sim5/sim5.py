@@ -1,4 +1,4 @@
-#pacerunning追加のシミュレーション
+# 休みを多くしたシミュレーション
 import math
 import random
 from turtle import color
