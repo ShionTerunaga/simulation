@@ -4,7 +4,7 @@ import random
 from turtle import color
 import pandas as pd
 import matplotlib.pyplot as plt
-road=1.1
+road=[]
 wether=1
 day_length=31
 au=[]
@@ -22,6 +22,7 @@ for i in range(day_length):
   if (i+1)==a:
     a+=7
     sub=random.randrange(1,3)
+    road.append(1)
     if sub==1:
       menu.append('12km_pacerunnning')
       au.append(3.5)
@@ -33,6 +34,7 @@ for i in range(day_length):
   elif (i+1)==b:
     b+=7    
     sub=random.randrange(1,3)
+    road.append(1)
     if sub==1:
       menu.append('1000m_interval×5')
       au.append(5)
@@ -41,11 +43,13 @@ for i in range(day_length):
       menu.append('2000m_interval×5')
       au.append(4.5)
       distance.append(10)
-  elif (i==(a-7) or i==(b-7))and i!=0:
+  elif (i==(a-7) or i==(b-7) or i==(b-6))and i!=0:
     menu.append('OFF')
     au.append(0)
     distance.append(0)
+    road.append(0)
   else:
+    road.append(1.1)
     menu.append('jog')  
     distance.append(random.randrange(6,20))
     sub=random.randrange(1,3)
@@ -55,7 +59,7 @@ for i in range(day_length):
       au.append(1.5)
 
 for i in range(day_length):
-  trimp.append(round(au[i]*distance[i]*road*wether,3))
+  trimp.append(round(au[i]*distance[i]*road[i]*wether,3))
 
 fig.append(trimp[0]*2)
 fit.append(trimp[0])
