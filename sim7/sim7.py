@@ -39,7 +39,7 @@ for i in range(length):
   sub=AM1+AM2+PM1+PM2
   trimp.append(sub)
 
-print(trimp)
+
 
 fig.append(trimp[0]*2)
 fit.append(trimp[0])
