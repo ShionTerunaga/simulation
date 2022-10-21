@@ -4,7 +4,7 @@ import random
 from turtle import color
 import pandas as pd
 import matplotlib.pyplot as plt
-road=1.1
+road=[1.1,1.1,1.1,1,1.1,1.1,1.1,1.1,1.1,1.1]
 wether=1
 day_length=10
 menu=['jog(4分59秒~4分)','jog(4分59秒~4分)','jog(4分59秒~4分)','ペース走','jog(~5分)','OFF','OFF','jog(~5分)','jog(~5分)','jog(4分59秒~4分)']
@@ -16,7 +16,7 @@ fig=[]
 fit=[]
 par=[]
 for i in range(day_length):
-  trimp.append(round(au[i]*distance[i]*road*wether,3))
+  trimp.append(round(au[i]*distance[i]*road[i]*wether,3))
 
 fig.append(trimp[0]*2)
 fit.append(trimp[0])
