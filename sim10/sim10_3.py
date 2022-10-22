@@ -94,7 +94,7 @@ print(f'最終日:フィットネス={fit[-1]},疲労={fig[-1]},パフォーマ�
 file_df=pd.DataFrame(zip(menu,au,distance,fit,fig,par),columns=['menu','au','distance','fitness','fatigue','performance'])
 figure=plt.figure()
 print(file_df)
-file_df.to_excel('./sim10_2.xlsx')
+file_df.to_excel('./sim10_3.xlsx')
 plt.plot(x,fit,color='red')
 plt.plot(x,fig,color='blue')
 plt.plot(x,par,color='yellow')
@@ -102,7 +102,7 @@ plt.xlim(1,day_length)
 plt.ylim(-400,400)
 plt.show()
 
-figure.savefig("./sim10_2.png")
+figure.savefig("./sim10_3.png")
 
 
 
