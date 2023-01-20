@@ -83,12 +83,13 @@ file_df=pd.DataFrame(zip(menu,au,distance,fit,fig,par),columns=['menu','au','dis
 figure=plt.figure()
 print(file_df)
 file_df.to_excel('./sim4.xlsx')
-plt.plot(x,fit,color='red')
-plt.plot(x,fig,color='blue')
-plt.plot(x,par,color='yellow')
+plt.plot(x,fit,color='red',label="fitness")
+plt.plot(x,fig,color='blue',label="fatigue")
+plt.plot(x,par,color='yellow',label="performance")
+plt.legend()
 plt.xlim(1,day_length)
 plt.ylim(-800,800)
-#plt.show()
+plt.show()
 
 figure.savefig("./sim4.png")
 
