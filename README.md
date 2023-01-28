@@ -47,3 +47,7 @@ anacondaプロンプトにて正常に動いた。
 ## 研究関連のリポジトリ
 [最適化問題を解く](https://github.com/teru12012000/python_gurobi)
 
+[抄録](https://github.com/teru12012000/Abstract)
+
+[本論](https://github.com/teru12012000/Thesis)
+
