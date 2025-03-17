@@ -51,3 +51,4 @@ anacondaプロンプトにて正常に動いた。
 
 [本論](https://github.com/teru12012000/Thesis)
 
+いつも大変お世話になっております。
